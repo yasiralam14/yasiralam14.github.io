@@ -156,6 +156,16 @@
       font-weight: 700;
     }
 
+    .item-link {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+    }
+
+    .item-link:hover {
+      color: var(--accent);
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -215,7 +225,7 @@
       <section>
         <h2>Current Work</h2>
         <p>
-          My latest project is a modified fork of Claurst, a Rust terminal coding agent, focused on an experimental
+          My latest project is a modified fork of <a class="item-link" href="https://github.com/yasiralam14/REPL_claurst" target="_blank" rel="noreferrer">Claurst</a>, a Rust terminal coding agent, focused on an experimental
           Python REPL-driven agent loop. The root model writes Python into a persistent REPL where Claurst tools such
           as Read, Bash, Glob, and Grep are exposed as callable functions. The loop continues until the model returns
           a final answer, while JSONL traces capture model outputs, extracted code, tool calls, helper LLM calls, and
@@ -227,12 +237,12 @@
         <h2>Focus Areas</h2>
         <div class="grid">
           <ul>
-            <li><strong>3D Computer Vision:</strong> novel view synthesis, 3D Gaussian Splatting, reconstruction quality, and discontinuity-aware evaluation.</li>
-            <li><strong>Energy-Based Models:</strong> expressive EBM priors, contrastive divergence, Langevin MCMC, and continuous latent generation.</li>
+            <li><a class="item-link" href="https://github.com/yasiralam14/Discontinuity-Aware-Evaluation-Framework-3D-models" target="_blank" rel="noreferrer">3D Computer Vision</a>: novel view synthesis, 3D Gaussian Splatting, reconstruction quality, and discontinuity-aware evaluation.</li>
+            <li><a class="item-link" href="https://github.com/yasiralam14/ebm_prior" target="_blank" rel="noreferrer">Energy-Based Models</a>: expressive EBM priors, contrastive divergence, Langevin MCMC, and continuous latent generation.</li>
           </ul>
           <ul>
-            <li><strong>Multi-Agent Systems:</strong> orchestration engines, tool-using coding agents, persistent REPL loops, and traceable execution.</li>
-            <li><strong>LLM Alignment:</strong> SFT and RL methods such as GDPO/GRPO for structured reasoning and multi-turn agentic behavior.</li>
+            <li><a class="item-link" href="https://github.com/yasiralam14/REPL_claurst" target="_blank" rel="noreferrer">Multi-Agent Systems</a>: orchestration engines, tool-using coding agents, persistent REPL loops, and traceable execution.</li>
+            <li><a class="item-link" href="https://github.com/yasiralam14/State_doctor" target="_blank" rel="noreferrer">LLM Alignment</a>: SFT and RL methods such as GDPO/GRPO for structured reasoning and multi-turn agentic behavior.</li>
           </ul>
         </div>
       </section>
@@ -240,11 +250,11 @@
       <section>
         <h2>Selected Projects</h2>
         <ul>
-          <li><strong>Claurst REPL-Agent Loop Fork:</strong> an experimental Rust terminal coding agent mode where the root model operates through a persistent Python REPL, calls Claurst tools as Python functions, and records detailed JSONL traces for debugging.</li>
-          <li><strong>State-Tracking Agentic LLMs:</strong> Llama-3.1-8B aligned with SFT and GDPO for structured interviews with an internal reasoning state.</li>
-          <li><strong>Discontinuity-Aware NVS Evaluation:</strong> a thesis framework using Laplacian pyramid zoning to evaluate rendering accuracy at sharp boundaries.</li>
-          <li><strong>EBM Priors for Latent Generation:</strong> a PyTorch implementation for learning energy-based priors over generative model latent spaces.</li>
-          <li><strong>HT-HVAE:</strong> a hierarchical text VAE combining DistilBERT and GPT-2 for coherent long-form generation.</li>
+          <li><a class="item-link" href="https://github.com/yasiralam14/REPL_claurst" target="_blank" rel="noreferrer">Claurst REPL-Agent Loop Fork</a>: an experimental Rust terminal coding agent mode where the root model operates through a persistent Python REPL, calls Claurst tools as Python functions, and records detailed JSONL traces for debugging.</li>
+          <li><a class="item-link" href="https://github.com/yasiralam14/State_doctor" target="_blank" rel="noreferrer">State-Tracking Agentic LLMs</a>: Llama-3.1-8B aligned with SFT and GDPO for structured interviews with an internal reasoning state.</li>
+          <li><a class="item-link" href="https://github.com/yasiralam14/Discontinuity-Aware-Evaluation-Framework-3D-models" target="_blank" rel="noreferrer">Discontinuity-Aware NVS Evaluation</a>: a thesis framework using Laplacian pyramid zoning to evaluate rendering accuracy at sharp boundaries.</li>
+          <li><a class="item-link" href="https://github.com/yasiralam14/ebm_prior" target="_blank" rel="noreferrer">EBM Priors for Latent Generation</a>: a PyTorch implementation for learning energy-based priors over generative model latent spaces.</li>
+          <li><a class="item-link" href="https://github.com/yasiralam14/ht_hvae" target="_blank" rel="noreferrer">HT-HVAE</a>: a hierarchical text VAE combining DistilBERT and GPT-2 for coherent long-form generation.</li>
         </ul>
       </section>
 
